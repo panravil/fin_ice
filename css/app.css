@@ -94,6 +94,8 @@
   margin: 0 auto;
   max-width: 480px;
   width: 100%;
+
+  color: #fff;
   width: 100%;
   max-width: 620px;
   padding: 25px 30px 30px;
@@ -144,6 +146,7 @@
   width: 100%;
 }
 #agegate-outer .selectwrapper select {
+  color: #333;
   height: 36px;
   width: 100%;
 }
