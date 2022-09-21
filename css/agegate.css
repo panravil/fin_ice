@@ -688,8 +688,8 @@ p {
 }
 
 a {
-  color: #477dca;
-  text-decoration: none;
+  color: #fff;
+  /* text-decoration: none; */
   transition: color 150ms ease;
 }
 
@@ -894,4 +894,12 @@ div#body-inner::after {
   clear: both;
   content: "";
   display: table;
+}
+
+div.legalfooter {
+  padding-top: 20px;
+}
+
+div.legalfooter p {
+  font-size: 10px;
 }
