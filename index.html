@@ -1,68 +1,244 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="css/app.css">
-		<link rel='stylesheet' id='agegate-styles-css'  href='css/app.css' media='all' />
-    </head>
-    <body>
-	    <div id="body-outer">
-	    	<div id="body-inner">
-		    	<h1>Your page content goes here</h1>
-	    	</div>
-	    </div>
-		<div id="agegate-outer">
-			<div class="agegate-container">
-				<div class="agegate-inner">
-					<form name="agegate" data-auto-tab="true">
-						<h1 class="instructions">Please enter your birthday!</h1>
-						<div class="fields">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <link
+      rel="stylesheet"
+      id="agegate-styles-css"
+      href="css/app.css"
+      media="all"
+    />
+    <script
+      src="//consent.trustarc.com/notice?domain=brown-forman.com&#038;c=teconsent&#038;js=nj&#038;noticeType=bb&#038;gtm=1&#038;text=true&#038;ver=6.0.2"
+      id="trustarc-js"
+    ></script>
+    <script
+      src="/public/js/app.js?version=PANTHEON_ENVIRONMENT"
+      id="trustarc-local-js"
+    ></script>
+  </head>
+  <body>
+    <div id="body-outer">
+      <div id="body-inner">
+        <h1>Your page content goes here</h1>
+      </div>
+    </div>
+    <div id="agegate-outer">
+      <div class="agegate-container">
+        <div class="agegate-inner">
+          <form name="agegate" data-auto-tab="true">
+            <h1 class="instructions">Please enter your birthday!</h1>
+            <div class="fields">
+              <fieldset class="agegate-fieldset" name="agegate-mmddyyyy">
+                <div class="fieldwrapper">
+                  <label class="sr-only">Month</label
+                  ><input
+                    type="number"
+                    name="agegate-month"
+                    placeholder="MM"
+                    required="required"
+                    min="01"
+                    max="12"
+                    pattern="\d*"
+                  />
+                </div>
+                <div class="fieldwrapper">
+                  <label class="sr-only">Day</label
+                  ><input
+                    type="number"
+                    name="agegate-day"
+                    placeholder="DD"
+                    required="required"
+                    min="01"
+                    max="31"
+                    pattern="\d*"
+                  />
+                </div>
+                <div class="fieldwrapper">
+                  <label class="sr-only">Year</label
+                  ><input
+                    type="number"
+                    name="agegate-year"
+                    placeholder="YYYY"
+                    required="required"
+                    min="1900"
+                    max="2017"
+                    pattern="\d*"
+                  />
+                </div>
+              </fieldset>
 
-							<fieldset class="agegate-fieldset" name="agegate-mmddyyyy">
-								<div class="fieldwrapper"><label class="sr-only">Month</label><input type="number" name="agegate-month" placeholder="MM" required="required" min="01" max="12" pattern="\d*"></div>
-								<div class="fieldwrapper"><label class="sr-only">Day</label><input type="number" name="agegate-day" placeholder="DD" required="required" min="01" max="31" pattern="\d*"></div>
-								<div class="fieldwrapper"><label class="sr-only">Year</label><input type="number" name="agegate-year" placeholder="YYYY" required="required" min="1900" max="2017" pattern="\d*"></div>
-							</fieldset>
+              <fieldset
+                class="agegate-fieldset"
+                name="agegate-ddmmyyyy"
+                disabled="disabled"
+              >
+                <div class="fieldwrapper">
+                  <label class="sr-only">Day</label
+                  ><input
+                    type="number"
+                    name="agegate-day"
+                    placeholder="DD"
+                    required="required"
+                    min="01"
+                    max="31"
+                    pattern="\d*"
+                  />
+                </div>
+                <div class="fieldwrapper">
+                  <label class="sr-only">Month</label
+                  ><input
+                    type="number"
+                    name="agegate-month"
+                    placeholder="MM"
+                    required="required"
+                    min="01"
+                    max="12"
+                    pattern="\d*"
+                  />
+                </div>
+                <div class="fieldwrapper">
+                  <label class="sr-only">Year</label
+                  ><input
+                    type="number"
+                    name="agegate-year"
+                    placeholder="YYYY"
+                    required="required"
+                    min="1900"
+                    max="2017"
+                    pattern="\d*"
+                  />
+                </div>
+              </fieldset>
 
-							<fieldset class="agegate-fieldset" name="agegate-ddmmyyyy" disabled="disabled">
-								<div class="fieldwrapper"><label class="sr-only">Day</label><input type="number" name="agegate-day" placeholder="DD" required="required" min="01" max="31" pattern="\d*"></div>
-								<div class="fieldwrapper"><label class="sr-only">Month</label><input type="number" name="agegate-month" placeholder="MM" required="required" min="01" max="12" pattern="\d*"></div>
-								<div class="fieldwrapper"><label class="sr-only">Year</label><input type="number" name="agegate-year" placeholder="YYYY" required="required" min="1900" max="2017" pattern="\d*"></div>
-							</fieldset>
+              <div class="selectwrapper">
+                <label class="sr-only">Country</label>
+                <select
+                  name="agegate-country"
+                  data-default-iso="US"
+                  data-use-cf
+                  required="required"
+                >
+                  <option value="US">The United States</option>
+                </select>
+              </div>
+              <div class="rememberwrapper">
+                <label
+                  ><input type="checkbox" name="agegate-remember" /> Remember
+                  me</label
+                >
+                <p>Do not choose this option if you use a shared computer</p>
+                <p>
+                  This site uses
+                  <a
+                    href="https://legal.brown-forman.com/cookie-policy/english"
+                    target="_blank"
+                    >Cookies</a
+                  >. I agree to the
+                  <a
+                    href="https://legal.brown-forman.com/terms-of-use/english"
+                    target="_blank"
+                    >Terms of Use</a
+                  >
+                  and
+                  <a
+                    href="https://legal.brown-forman.com/privacy-policy/english"
+                    target="_blank"
+                    >Privacy Policy</a
+                  >
+                </p>
+              </div>
+              <input type="hidden" name="agegate-category" value="spirits" />
+              <div id="agegate-errors"></div>
+              <div class="submitwrapper">
+                <input type="submit" value="Submit" />
+              </div>
+            </div>
+          </form>
+          <div class="legalfooter">
+            <h2>Drink Responsibly</h2>
+            <p>Legal mandatory language here</p>
+            <p>
+              Please do not share or forward this content to anyone under the
+              legal drinking age.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-							<div class="selectwrapper">
-								<label class="sr-only">Country</label>
-								<select name="agegate-country" data-default-iso="US" data-use-cf required="required">
-									<option value="US">The United States</option>
-								</select>
-							</div>
-							<div class="rememberwrapper">
-								<label><input type="checkbox" name="agegate-remember"> Remember me</label>
-								<p>Do not choose this option if you use a shared computer</p>
-								<p>This site uses <a href="https://legal.brown-forman.com/cookie-policy/english" target="_blank">Cookies</a>. I agree to the <a href="https://legal.brown-forman.com/terms-of-use/english" target="_blank">Terms of Use</a> and <a href="https://legal.brown-forman.com/privacy-policy/english" target="_blank">Privacy Policy</a></p>
-							</div>
-							<input type="hidden" name="agegate-category" value="spirits">
-							<div id="agegate-errors"></div>
-							<div class="submitwrapper">
-								<input type="submit" value="Submit">
-							</div>
-						</div>
-					</form>
-					<div class="legalfooter">
-						<h2>Drink Responsibly</h2>
-						<p>Legal mandatory language here</p>
-            <p>Please do not share or forward this content to anyone under the legal drinking age.</p>
-					</div>
-				</div>
-			</div>
-		</div>
+    <div class="bf-agegate-exclude bf-trust-arc-outer-container">
+      <style>
+        .bf-ta-consent-blackbar {
+          bottom: 0;
+          display: inline-block;
+          left: 0;
+          position: fixed;
+          text-align: center;
+          width: 100%;
+          z-index: 4002;
+        }
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-        <script type="text/javascript" src="js/agegate.js"></script>
-    </body>
+        .bf-ta-consent-blackbar.consent-asserted {
+          pointer-events: none;
+        }
+
+        .bf-ta-blackbar {
+          background-color: #000;
+          display: inline-block;
+          padding: 0 15px;
+          width: 100%;
+        }
+
+        #consent_blackbar {
+          margin: 0 auto;
+          max-width: 800px;
+          width: 100%;
+        }
+
+        .bf-trust-arc-teconsent {
+          background-color: #101822;
+          display: inline-block;
+          padding-left: 15px;
+          padding-top: 10px;
+          width: 100%;
+        }
+
+        .agegate .bf-trust-arc.bf-trust-arc-teconsent {
+          z-index: 4001;
+          position: fixed;
+          bottom: 0;
+        }
+
+        @media only screen and (min-width: 1030px) {
+          #consent_blackbar {
+            margin: 0;
+          }
+        }
+      </style>
+      <div
+        class="bf-trust-arc bf-ta-consent-blackbar"
+        id="bf_ta_consent_blackbar"
+      >
+        <div class="bf-ta-blackbar">
+          <div id="consent_blackbar"></div>
+        </div>
+      </div>
+      <div class="bf-trust-arc bf-trust-arc-teconsent">
+        <div id="teconsent"></div>
+      </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write('<script src="js/jquery.min.js"><\/script>');
+    </script>
+    <script type="text/javascript" src="js/agegate.js"></script>
+  </body>
 </html>
