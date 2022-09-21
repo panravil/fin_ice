@@ -63,7 +63,7 @@
 #agegate-outer .agegate-container {
   /* margin-top: 4em; */
   padding: 0 1em;
-  background-image: url(./../assets/images/fin_ice_bg.png);
+  background-image: url(./../images/fin_ice_bg.png);
   opacity: 1;
   display: flex;
   z-index: 4000;

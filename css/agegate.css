@@ -491,6 +491,7 @@ input[type="week"],
 input:not([type]),
 textarea,
 select[multiple="multiple"] {
+  color: #333;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 3px;
