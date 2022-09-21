@@ -7,6 +7,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <link rel="stylesheet" type="text/css" href="css/bf-trust-arc.css" />
     <link
       rel="stylesheet"
       id="agegate-styles-css"
@@ -18,7 +19,7 @@
       id="trustarc-js"
     ></script>
     <script
-      src="/public/js/app.js?version=PANTHEON_ENVIRONMENT"
+      src="/public/js/app.js"
       id="trustarc-local-js"
     ></script>
   </head>
@@ -173,54 +174,6 @@
     </div>
 
     <div class="bf-agegate-exclude bf-trust-arc-outer-container">
-      <style>
-        .bf-ta-consent-blackbar {
-          bottom: 0;
-          display: inline-block;
-          left: 0;
-          position: fixed;
-          text-align: center;
-          width: 100%;
-          z-index: 4002;
-        }
-
-        .bf-ta-consent-blackbar.consent-asserted {
-          pointer-events: none;
-        }
-
-        .bf-ta-blackbar {
-          background-color: #000;
-          display: inline-block;
-          padding: 0 15px;
-          width: 100%;
-        }
-
-        #consent_blackbar {
-          margin: 0 auto;
-          max-width: 800px;
-          width: 100%;
-        }
-
-        .bf-trust-arc-teconsent {
-          background-color: #101822;
-          display: inline-block;
-          padding-left: 15px;
-          padding-top: 10px;
-          width: 100%;
-        }
-
-        .agegate .bf-trust-arc.bf-trust-arc-teconsent {
-          z-index: 4001;
-          position: fixed;
-          bottom: 0;
-        }
-
-        @media only screen and (min-width: 1030px) {
-          #consent_blackbar {
-            margin: 0;
-          }
-        }
-      </style>
       <div
         class="bf-trust-arc bf-ta-consent-blackbar"
         id="bf_ta_consent_blackbar"
