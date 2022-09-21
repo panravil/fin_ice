@@ -117,7 +117,7 @@
 			success : function(r) {
 				var html = "";
 				var country = $('select[name=agegate-country]');
-				var default_iso = hasAttr(country.attr('data-default-iso')) && country.attr('data-default-iso') !== "" ? country.attr('data-default-iso') : "US";
+				var default_iso = hasAttr(country.attr('data-default-iso')) && country.attr('data-default-iso') !== "" ? country.attr('data-default-iso') : "CZ";
 				default_iso = default_iso.toUpperCase();
 				$.each(r, function(key, value){
 					if(value.iso2_code.toUpperCase() == default_iso){
