@@ -41,7 +41,7 @@
 	function hideAgegate(){
 		$('form[name=agegate]').attr('disabled', 'disabled');
 		$('div#agegate-outer').css('display', 'none');
-		$('div#body-outer').removeClass('stop-scrolling').css('visibility', 'visible')
+		$('div#body-outer').removeClass('stop-scrolling').css('visibility', 'visible').css('display', 'block')
 		if (bfa.altMethod) {
 			$('div#body-outer').children().first().unwrap();
 		}
